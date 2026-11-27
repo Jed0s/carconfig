@@ -1,0 +1,2931 @@
+{
+  "schemaVersion": 1,
+  "model": {
+    "make": "Dodge",
+    "name": "Challenger",
+    "engine": "3.6L Pentastar V6",
+    "notes": "Covers the V6 trims (SXT and GT) for model years 2015-2023. Prices are US MSRP in USD excluding destination unless noted. Each trim and package carries a confidence flag: verified (from an option list or press release), likely (secondary source or carry-over), uncertain (general knowledge, needs checking)."
+  },
+  "features": {
+    "v6-pentastar": {
+      "name": "3.6L Pentastar V6",
+      "category": "performance",
+      "hint": "The 6-cylinder engine in every SXT and GT: about 303-305 hp. Cheaper to run and insure than the V8 R/T, but noticeably slower."
+    },
+    "auto-8-speed": {
+      "name": "8-speed automatic (TorqueFlite)",
+      "category": "performance",
+      "hint": "The only transmission offered with the V6. More gears keep the engine in its efficient range, so it is smooth and reasonably economical. No manual was offered on V6 cars."
+    },
+    "awd": {
+      "name": "All-wheel drive",
+      "category": "performance",
+      "hint": "Sends power to the front wheels too when the rear ones slip. Big help in rain and snow. The Challenger's system drives the rear wheels normally and disconnects the front axle to save fuel until it is needed."
+    },
+    "backup-camera": {
+      "name": "Rear backup camera (ParkView)",
+      "category": "safety",
+      "hint": "Shows what is behind the car on the screen when you shift into reverse, with guide lines."
+    },
+    "parksense-rear": {
+      "name": "Rear park assist (ParkSense)",
+      "category": "safety",
+      "hint": "Sensors in the rear bumper beep faster as you get close to an object while reversing. Different from the camera: it warns you by sound even if you are not looking at the screen."
+    },
+    "blind-spot": {
+      "name": "Blind-spot monitoring",
+      "category": "safety",
+      "hint": "A light in the side mirror turns on when a car is in the spot you cannot see over your shoulder. Very useful on a Challenger because rear visibility is poor."
+    },
+    "rear-cross-path": {
+      "name": "Rear cross-path detection",
+      "category": "safety",
+      "hint": "Warns you when backing out of a parking space if a car is coming from the side, which you often cannot see past neighbouring cars."
+    },
+    "forward-collision-warning": {
+      "name": "Forward collision warning",
+      "category": "safety",
+      "hint": "Beeps and flashes if you are closing in on the car ahead too fast. On the Challenger it is a warning only: it does not brake the car for you (no automatic emergency braking)."
+    },
+    "adaptive-cruise": {
+      "name": "Adaptive cruise control",
+      "category": "safety",
+      "hint": "Cruise control that keeps a set distance from the car ahead, slowing down and speeding up with traffic. Great on highways."
+    },
+    "auto-high-beams": {
+      "name": "Automatic high beams",
+      "category": "safety",
+      "hint": "Turns the high beams on in the dark and dips them automatically when a car is coming the other way."
+    },
+    "rain-sensing-wipers": {
+      "name": "Rain-sensing wipers",
+      "category": "comfort",
+      "hint": "The wipers switch on and adjust their speed by themselves when it rains."
+    },
+    "hid-headlamps": {
+      "name": "HID (xenon) headlamps",
+      "category": "safety",
+      "hint": "Brighter, whiter headlights than the standard halogen bulbs. Noticeably better at night."
+    },
+    "fog-lamps": {
+      "name": "Front fog lamps",
+      "category": "safety",
+      "hint": "Low lights in the front bumper that light the road close to the car in fog or heavy rain."
+    },
+    "remote-start": {
+      "name": "Remote start",
+      "category": "comfort",
+      "hint": "Start the engine from the key fob so the cabin is warm or cool before you get in."
+    },
+    "keyless-go": {
+      "name": "Keyless entry and push-button start (Keyless Enter 'n Go)",
+      "category": "comfort",
+      "hint": "Keep the key in your pocket: touch the door handle to unlock and press a button to start."
+    },
+    "power-folding-mirrors": {
+      "name": "Power folding side mirrors",
+      "category": "comfort",
+      "hint": "The side mirrors fold in at the press of a button, handy in tight garages or parking spots."
+    },
+    "garage-door-opener": {
+      "name": "Universal garage door opener",
+      "category": "comfort",
+      "hint": "Buttons in the car you program to open your garage door or gate, so you do not need a separate remote."
+    },
+    "dual-zone-climate": {
+      "name": "Dual-zone automatic climate control",
+      "category": "comfort",
+      "hint": "Driver and passenger set their own temperatures, and the system holds them automatically."
+    },
+    "heated-seats": {
+      "name": "Heated front seats",
+      "category": "comfort",
+      "hint": "Warms the seat cushion and back in cold weather."
+    },
+    "ventilated-seats": {
+      "name": "Ventilated front seats",
+      "category": "comfort",
+      "hint": "Fans blow air through small holes in the seats to keep you cool in hot weather. Usually only with leather seats."
+    },
+    "heated-steering-wheel": {
+      "name": "Heated steering wheel",
+      "category": "comfort",
+      "hint": "Warms the steering wheel rim so you can drive without gloves in winter."
+    },
+    "power-tilt-telescope": {
+      "name": "Power tilt and telescoping steering column",
+      "category": "comfort",
+      "hint": "Moves the steering wheel up, down, in and out with a switch to fit your driving position."
+    },
+    "seat-memory": {
+      "name": "Driver seat memory",
+      "category": "comfort",
+      "hint": "Saves the driver seat (and often mirror) position so two drivers can switch with one button."
+    },
+    "houndstooth-cloth": {
+      "name": "Houndstooth cloth seats",
+      "category": "comfort",
+      "hint": "Durable cloth seats with a retro checked pattern. Standard on the base cars."
+    },
+    "nappa-leather": {
+      "name": "Nappa leather seats",
+      "category": "comfort",
+      "hint": "Soft, high-grade leather upholstery. Feels premium and is easier to clean than cloth."
+    },
+    "nappa-alcantara": {
+      "name": "Nappa leather and Alcantara performance seats",
+      "category": "comfort",
+      "hint": "Sportier seats with bigger side bolsters that hold you in corners, trimmed in leather plus Alcantara (a grippy suede-like fabric)."
+    },
+    "uconnect-7": {
+      "name": "Uconnect 7-inch touchscreen",
+      "category": "technology",
+      "hint": "The standard infotainment screen for radio, phone and apps."
+    },
+    "uconnect-84": {
+      "name": "Uconnect 8.4-inch touchscreen",
+      "category": "technology",
+      "hint": "The bigger, faster infotainment screen. Easier to read and unlocks extras like Dodge Performance Pages."
+    },
+    "navigation": {
+      "name": "Built-in navigation",
+      "category": "technology",
+      "hint": "Maps stored in the car. Works without phone signal, but most people now use Apple CarPlay or Android Auto instead."
+    },
+    "carplay-android": {
+      "name": "Apple CarPlay and Android Auto",
+      "category": "technology",
+      "hint": "Shows your phone's apps (maps, music, messages) on the car screen. Standard from 2017 with Uconnect 4."
+    },
+    "siriusxm": {
+      "name": "SiriusXM satellite radio",
+      "category": "technology",
+      "hint": "Subscription radio with hundreds of channels that works nationwide. Usually comes with a free trial."
+    },
+    "wifi-hotspot": {
+      "name": "4G LTE Wi-Fi hotspot",
+      "category": "technology",
+      "hint": "The car has its own mobile data connection and can share Wi-Fi with passengers (needs a data plan)."
+    },
+    "performance-pages": {
+      "name": "Dodge Performance Pages",
+      "category": "performance",
+      "hint": "Screens on the touchscreen showing g-forces, lap and 0-60 timers, gauges, plus settings for launch control and drive modes."
+    },
+    "launch-control": {
+      "name": "Launch control",
+      "category": "performance",
+      "hint": "Holds engine revs and manages wheelspin so you get the quickest possible start from a standstill."
+    },
+    "super-track-pak": {
+      "name": "Super Track Pak",
+      "category": "performance",
+      "hint": "Dodge's name for a sport mode setup: firmer steering and suspension feel, Performance Pages and a sport/track button. Standard on GT, optional on early SXTs."
+    },
+    "tft-cluster-7": {
+      "name": "7-inch digital driver display",
+      "category": "technology",
+      "hint": "A screen between the gauges that shows trip info, tire pressure, navigation prompts and more."
+    },
+    "alpine-6": {
+      "name": "Alpine premium audio (6 speakers, 276 W)",
+      "category": "audio",
+      "hint": "Upgraded speakers and amplifier. Clearer and louder than the base stereo."
+    },
+    "alpine-9-sub": {
+      "name": "Alpine audio with subwoofer (9 speakers, 506 W)",
+      "category": "audio",
+      "hint": "Adds more speakers and a subwoofer for deep bass and surround sound."
+    },
+    "harman-kardon": {
+      "name": "Harman Kardon audio (18 speakers, 900 W)",
+      "category": "audio",
+      "hint": "The top sound system: 18 speakers and a trunk subwoofer. Concert-like sound."
+    },
+    "sunroof": {
+      "name": "Power sunroof",
+      "category": "comfort",
+      "hint": "A glass panel in the roof that tilts and slides open."
+    },
+    "wheels-18": {
+      "name": "18-inch alloy wheels",
+      "category": "appearance",
+      "hint": "Standard size. Taller tire sidewalls give a softer ride and cheaper tires."
+    },
+    "wheels-19": {
+      "name": "19-inch alloy wheels",
+      "category": "appearance",
+      "hint": "Bigger wheels than the base car: sharper look and a bit more grip, slightly firmer ride."
+    },
+    "wheels-20": {
+      "name": "20-inch alloy wheels",
+      "category": "appearance",
+      "hint": "Large wheels with low-profile tires: aggressive look and better handling, but a firmer ride and pricier tires."
+    },
+    "black-exterior": {
+      "name": "Black exterior accents",
+      "category": "appearance",
+      "hint": "Gloss or satin black grille, badges, spoiler and wheels for a darker, meaner look."
+    },
+    "rear-spoiler": {
+      "name": "Rear spoiler",
+      "category": "appearance",
+      "hint": "A lip on the trunk lid. Mostly a style element at road speeds."
+    },
+    "hood-scoop": {
+      "name": "Functional hood scoop",
+      "category": "appearance",
+      "hint": "An air intake in the hood. On the GT it is real and feeds cooler air to the engine, and it gives the V6 car a V8 look."
+    },
+    "front-splitter": {
+      "name": "Front splitter",
+      "category": "appearance",
+      "hint": "A blade under the front bumper that cuts air at speed and makes the car look lower and sportier."
+    },
+    "performance-suspension": {
+      "name": "Performance suspension",
+      "category": "performance",
+      "hint": "Firmer springs and shocks so the car leans less in corners. Slightly harsher over bumps."
+    },
+    "performance-brakes": {
+      "name": "Performance brakes",
+      "category": "performance",
+      "hint": "Larger brake discs and calipers that stop better and resist fading when used hard."
+    },
+    "brembo-brakes": {
+      "name": "Brembo 4-piston brakes",
+      "category": "performance",
+      "hint": "High-end brake calipers (usually painted red). Strong, consistent braking for spirited driving."
+    },
+    "bilstein-shocks": {
+      "name": "Bilstein performance shocks",
+      "category": "performance",
+      "hint": "Premium shock absorbers that control the body better in corners without being too harsh."
+    },
+    "axle-307": {
+      "name": "3.07 rear axle ratio",
+      "category": "performance",
+      "hint": "A shorter final drive gear than the base car. The car feels quicker off the line at the cost of slightly higher revs on the highway."
+    },
+    "limited-slip": {
+      "name": "Limited-slip differential",
+      "category": "performance",
+      "hint": "Splits power between the rear wheels so the one with grip keeps pushing. Helps when accelerating out of corners and on slippery roads."
+    },
+    "performance-steering": {
+      "name": "Performance steering",
+      "category": "performance",
+      "hint": "Quicker, weightier steering that feels more connected to the road."
+    },
+    "performance-steering-wheel": {
+      "name": "Performance steering wheel with paddle shifters",
+      "category": "performance",
+      "hint": "A thicker, sportier wheel (flat-bottom on some packages) with paddles to change gears manually."
+    },
+    "block-heater": {
+      "name": "Engine block heater",
+      "category": "other",
+      "hint": "Plugs into a wall outlet to keep the engine warm overnight in very cold climates so it starts easily."
+    },
+    "compact-spare": {
+      "name": "Compact spare tire",
+      "category": "other",
+      "hint": "A small temporary spare wheel. Without it the car only has a tire inflator kit, which cannot fix a torn tire."
+    },
+    "ambient-lighting": {
+      "name": "Ambient interior lighting",
+      "category": "appearance",
+      "hint": "Soft LED lighting around the cabin at night."
+    },
+    "surround-camera": {
+      "name": "360-degree surround-view camera",
+      "category": "safety",
+      "hint": "Stitches several cameras into a bird's-eye view of the car for parking. Note: never offered on the Challenger, which only has a rear camera. Listed here because it appears on many other cars."
+    }
+  },
+  "years": [
+    {
+      "year": 2015,
+      "notes": "First years of the facelifted Challenger with the 8-speed automatic. No GT yet: the V6 came as SXT or the better-equipped SXT Plus. Package names and contents for these years are from general knowledge and not yet checked against a window sticker.",
+      "sources": [
+        {
+          "title": "General knowledge, not checked against a primary source"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7"
+          ],
+          "confidence": "likely",
+          "notes": "Prices excluding destination were roughly $27k; not verified."
+        }
+      ],
+      "packages": [
+        {
+          "id": "sxt-plus",
+          "name": "SXT Plus (upgrade trim)",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "nappa-leather",
+            "heated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "wheels-20",
+            "power-tilt-telescope"
+          ],
+          "confidence": "uncertain",
+          "notes": "Sold as a separate trim level, modelled here as an upgrade over the SXT. Exact contents varied by year."
+        },
+        {
+          "id": "super-track-pak",
+          "name": "Super Track Pak",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "super-track-pak",
+            "performance-suspension",
+            "performance-steering",
+            "axle-307",
+            "wheels-20",
+            "performance-pages"
+          ],
+          "confidence": "uncertain",
+          "notes": "Sport-oriented option for V6 cars in the early facelift years."
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors",
+            "fog-lamps",
+            "parksense-rear",
+            "remote-start",
+            "garage-door-opener"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "uncertain",
+          "notes": "Believed to require the SXT Plus."
+        },
+        {
+          "id": "navigation",
+          "name": "Navigation",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "uncertain"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "notes": "First years of the facelifted Challenger with the 8-speed automatic. No GT yet: the V6 came as SXT or the better-equipped SXT Plus. Package names and contents for these years are from general knowledge and not yet checked against a window sticker.",
+      "sources": [
+        {
+          "title": "General knowledge, not checked against a primary source"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7"
+          ],
+          "confidence": "likely",
+          "notes": "Prices excluding destination were roughly $27k; not verified."
+        }
+      ],
+      "packages": [
+        {
+          "id": "sxt-plus",
+          "name": "SXT Plus (upgrade trim)",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "nappa-leather",
+            "heated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "wheels-20",
+            "power-tilt-telescope"
+          ],
+          "confidence": "uncertain",
+          "notes": "Sold as a separate trim level, modelled here as an upgrade over the SXT. Exact contents varied by year."
+        },
+        {
+          "id": "super-track-pak",
+          "name": "Super Track Pak",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "super-track-pak",
+            "performance-suspension",
+            "performance-steering",
+            "axle-307",
+            "wheels-20",
+            "performance-pages"
+          ],
+          "confidence": "uncertain",
+          "notes": "Sport-oriented option for V6 cars in the early facelift years."
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors",
+            "fog-lamps",
+            "parksense-rear",
+            "remote-start",
+            "garage-door-opener"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "uncertain",
+          "notes": "Believed to require the SXT Plus."
+        },
+        {
+          "id": "navigation",
+          "name": "Navigation",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "uncertain"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "notes": "The GT arrives for 2017 as an all-wheel-drive-only, well-equipped V6 model (the first AWD American muscle coupe). Uconnect 4 with Apple CarPlay and Android Auto becomes available. SXT Plus is still offered.",
+      "sources": [
+        {
+          "title": "FCA/Stellantis press release: 2017 Dodge Challenger GT (Dec 7, 2016)",
+          "url": "https://www.media.stellantisnorthamerica.com/text.do?id=18033"
+        },
+        {
+          "title": "Carvana: 2017 Dodge Challenger overview",
+          "url": "https://www.carvana.com/buy/2017-dodge-challenger/"
+        },
+        {
+          "title": "General knowledge, not checked against a primary source"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "awd",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "dual-zone-climate",
+            "fog-lamps",
+            "rear-spoiler",
+            "wheels-19",
+            "nappa-leather",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "carplay-android"
+          ],
+          "confidence": "verified",
+          "baseMsrpUsd": 33395,
+          "notes": "AWD only. Base price excludes the $1,095 destination charge (2017)."
+        }
+      ],
+      "packages": [
+        {
+          "id": "sxt-plus",
+          "name": "SXT Plus (upgrade trim)",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "nappa-leather",
+            "heated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "wheels-20",
+            "power-tilt-telescope",
+            "performance-pages"
+          ],
+          "confidence": "likely",
+          "notes": "Separate trim level in 2017 (confirmed by Carvana's 2017 trim list), modelled as an upgrade over the SXT."
+        },
+        {
+          "id": "gt-interior",
+          "name": "GT Interior Package",
+          "availableOn": [
+            "gt"
+          ],
+          "priceUsd": 995,
+          "features": [
+            "nappa-alcantara",
+            "alpine-9-sub",
+            "performance-steering-wheel"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "FCA/Stellantis press release: 2017 Dodge Challenger GT (Dec 7, 2016)",
+              "url": "https://www.media.stellantisnorthamerica.com/text.do?id=18033"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "uncertain",
+          "notes": "On the SXT it also adds rear park sensors, remote start, fog lamps and a garage door opener."
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "uncertain"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "notes": "The GT arrives for 2017 as an all-wheel-drive-only, well-equipped V6 model (the first AWD American muscle coupe). Uconnect 4 with Apple CarPlay and Android Auto becomes available. SXT Plus is still offered.",
+      "sources": [
+        {
+          "title": "FCA/Stellantis press release: 2017 Dodge Challenger GT (Dec 7, 2016)",
+          "url": "https://www.media.stellantisnorthamerica.com/text.do?id=18033"
+        },
+        {
+          "title": "Carvana: 2017 Dodge Challenger overview",
+          "url": "https://www.carvana.com/buy/2017-dodge-challenger/"
+        },
+        {
+          "title": "General knowledge, not checked against a primary source"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "awd",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "dual-zone-climate",
+            "fog-lamps",
+            "rear-spoiler",
+            "wheels-19",
+            "nappa-leather",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "carplay-android"
+          ],
+          "confidence": "likely",
+          "notes": "AWD only. Price not verified."
+        }
+      ],
+      "packages": [
+        {
+          "id": "sxt-plus",
+          "name": "SXT Plus (upgrade trim)",
+          "availableOn": [
+            "sxt"
+          ],
+          "features": [
+            "nappa-leather",
+            "heated-seats",
+            "heated-steering-wheel",
+            "uconnect-84",
+            "alpine-6",
+            "wheels-20",
+            "power-tilt-telescope",
+            "performance-pages"
+          ],
+          "confidence": "likely",
+          "notes": "Separate trim level in 2017 (confirmed by Carvana's 2017 trim list), modelled as an upgrade over the SXT."
+        },
+        {
+          "id": "gt-interior",
+          "name": "GT Interior Package",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "nappa-alcantara",
+            "alpine-9-sub",
+            "performance-steering-wheel"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "FCA/Stellantis press release: 2017 Dodge Challenger GT (Dec 7, 2016)",
+              "url": "https://www.media.stellantisnorthamerica.com/text.do?id=18033"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "uncertain",
+          "notes": "On the SXT it also adds rear park sensors, remote start, fog lamps and a garage door opener."
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "uncertain"
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "uncertain"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "notes": "Big reshuffle: the SXT Plus trim is replaced by an optional Plus Package, and the GT is now offered with rear-wheel drive (sportier, with performance suspension and hood scoop) as well as AWD. Prices exclude the $1,395 destination charge.",
+      "sources": [
+        {
+          "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+          "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+        },
+        {
+          "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+          "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "verified",
+          "baseMsrpUsd": 27295
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "remote-start",
+            "dual-zone-climate",
+            "fog-lamps",
+            "hood-scoop",
+            "front-splitter",
+            "wheels-20",
+            "houndstooth-cloth",
+            "uconnect-84",
+            "carplay-android",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "launch-control",
+            "performance-suspension",
+            "performance-brakes",
+            "performance-steering",
+            "axle-307",
+            "performance-steering-wheel",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "notes": "GT AWD started at $32,995 (verified, MoparInsiders). The GT AWD has 19-inch wheels and lacks the RWD car's performance suspension and steering. GT RWD base price not verified."
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus",
+          "name": "Plus Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 3000,
+            "gt": 2495
+          },
+          "features": [
+            "uconnect-84",
+            "alpine-6",
+            "nappa-leather",
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "parksense-rear",
+            "garage-door-opener"
+          ],
+          "confidence": "verified",
+          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 1195,
+            "gt": 1295
+          },
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1095,
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "verified",
+          "notes": "On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT).",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "cold-weather-group",
+          "name": "Cold Weather Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 495,
+          "features": [
+            "heated-seats",
+            "heated-steering-wheel"
+          ],
+          "confidence": "verified",
+          "notes": "Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 695,
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "verified",
+          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "alpine-audio",
+          "name": "Alpine Audio Group with Subwoofer",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 895,
+          "features": [
+            "alpine-9-sub"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "priceUsd": 1595,
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV with 8.4-inch display",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1095,
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "verified",
+          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020).",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1195,
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "siriusxm",
+          "name": "SiriusXM satellite radio",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 195,
+          "features": [
+            "siriusxm"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "interior-appearance",
+          "name": "Mopar Interior Appearance Package",
+          "availableOn": [
+            "sxt"
+          ],
+          "priceUsd": 475,
+          "features": [],
+          "confidence": "verified",
+          "notes": "Cosmetic interior trim pieces from Mopar.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "compact-spare",
+          "name": "Compact spare tire",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 495,
+            "gt": 295
+          },
+          "features": [
+            "compact-spare"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "block-heater",
+          "name": "Engine block heater",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 95,
+          "features": [
+            "block-heater"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "notes": "Carries over the 2019 layout. SXT package prices are verified from the 2020 SXT options list; GT prices are not. Prices exclude the $1,495 destination charge.",
+      "sources": [
+        {
+          "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+          "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "verified",
+          "baseMsrpUsd": 27995
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "remote-start",
+            "dual-zone-climate",
+            "fog-lamps",
+            "hood-scoop",
+            "front-splitter",
+            "wheels-20",
+            "houndstooth-cloth",
+            "uconnect-84",
+            "carplay-android",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "launch-control",
+            "performance-suspension",
+            "performance-brakes",
+            "performance-steering",
+            "axle-307",
+            "performance-steering-wheel",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "notes": "RWD or AWD. Base price not verified."
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus",
+          "name": "Plus Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 3195
+          },
+          "features": [
+            "uconnect-84",
+            "alpine-6",
+            "nappa-leather",
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "parksense-rear",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 1295
+          },
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 1095
+          },
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "likely",
+          "notes": "On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT).",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "cold-weather-group",
+          "name": "Cold Weather Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 495
+          },
+          "features": [
+            "heated-seats",
+            "heated-steering-wheel"
+          ],
+          "confidence": "likely",
+          "notes": "Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 1295
+          },
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "alpine-audio",
+          "name": "Alpine Audio Group with Subwoofer",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 995
+          },
+          "features": [
+            "alpine-9-sub"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV with 8.4-inch display",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1095,
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "likely",
+          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020).",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 1295
+          },
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "siriusxm",
+          "name": "SiriusXM satellite radio",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 195,
+          "features": [
+            "siriusxm"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "interior-appearance",
+          "name": "Mopar Interior Appearance Package",
+          "availableOn": [
+            "sxt"
+          ],
+          "priceUsd": 475,
+          "features": [],
+          "confidence": "likely",
+          "notes": "Cosmetic interior trim pieces from Mopar.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "compact-spare",
+          "name": "Compact spare tire",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 495
+          },
+          "features": [
+            "compact-spare"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "block-heater",
+          "name": "Engine block heater",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 95,
+          "features": [
+            "block-heater"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "performance-handling-group",
+          "name": "Performance Handling Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "brembo-brakes",
+            "bilstein-shocks",
+            "wheels-20",
+            "performance-steering-wheel",
+            "limited-slip"
+          ],
+          "confidence": "likely",
+          "notes": "RWD GT only. Price not found.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "awd",
+          "name": "All-wheel drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "awd",
+            "wheels-19"
+          ],
+          "confidence": "likely",
+          "notes": "AWD becomes available on the SXT around this time (some sources say 2019). Price not verified for 2020."
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "notes": "Carry-over year. Package line-up assumed unchanged from 2020; prices not verified. Based on Cars.com, the SXT was about $31,045 and the GT $34,045 including destination.",
+      "sources": [
+        {
+          "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+          "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+        },
+        {
+          "title": "General knowledge, not checked against a primary source"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "remote-start",
+            "dual-zone-climate",
+            "fog-lamps",
+            "hood-scoop",
+            "front-splitter",
+            "wheels-20",
+            "houndstooth-cloth",
+            "uconnect-84",
+            "carplay-android",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "launch-control",
+            "performance-suspension",
+            "performance-brakes",
+            "performance-steering",
+            "axle-307",
+            "performance-steering-wheel",
+            "garage-door-opener"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus",
+          "name": "Plus Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "uconnect-84",
+            "alpine-6",
+            "nappa-leather",
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "parksense-rear",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "likely",
+          "notes": "On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT).",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "cold-weather-group",
+          "name": "Cold Weather Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "heated-seats",
+            "heated-steering-wheel"
+          ],
+          "confidence": "likely",
+          "notes": "Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator.",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "alpine-audio",
+          "name": "Alpine Audio Group with Subwoofer",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "alpine-9-sub"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV with 8.4-inch display",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "siriusxm",
+          "name": "SiriusXM satellite radio",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "siriusxm"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "compact-spare",
+          "name": "Compact spare tire",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "compact-spare"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "block-heater",
+          "name": "Engine block heater",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "block-heater"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "interior-appearance",
+          "name": "Interior Appearance Group by Mopar",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [],
+          "confidence": "uncertain",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "performance-handling-group",
+          "name": "Performance Handling Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "brembo-brakes",
+            "performance-suspension",
+            "performance-steering",
+            "limited-slip",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "RWD GT only.",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "awd",
+          "name": "All-wheel drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "awd",
+            "wheels-19"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "notes": "Carry-over year with an upgraded alarm. V6 rated 303 hp. Base prices are derived from Cars.com prices that include the $1,595 destination charge. Safety tech like blind-spot monitoring and adaptive cruise is still optional, and there is no automatic emergency braking.",
+      "sources": [
+        {
+          "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+          "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android"
+          ],
+          "confidence": "likely",
+          "baseMsrpUsd": 29680,
+          "notes": "$31,275 including destination per Cars.com."
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "remote-start",
+            "dual-zone-climate",
+            "fog-lamps",
+            "hood-scoop",
+            "front-splitter",
+            "wheels-20",
+            "houndstooth-cloth",
+            "uconnect-84",
+            "carplay-android",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "launch-control",
+            "performance-suspension",
+            "performance-brakes",
+            "performance-steering",
+            "axle-307",
+            "performance-steering-wheel",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "baseMsrpUsd": 32955,
+          "notes": "$34,550 including destination per Cars.com."
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus",
+          "name": "Plus Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "uconnect-84",
+            "alpine-6",
+            "nappa-leather",
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "parksense-rear",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "likely",
+          "notes": "On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT).",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "cold-weather-group",
+          "name": "Cold Weather Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "heated-seats",
+            "heated-steering-wheel"
+          ],
+          "confidence": "likely",
+          "notes": "Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator.",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "alpine-audio",
+          "name": "Alpine Audio Group with Subwoofer",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "alpine-9-sub"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV with 8.4-inch display",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "siriusxm",
+          "name": "SiriusXM satellite radio",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "siriusxm"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "compact-spare",
+          "name": "Compact spare tire",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "compact-spare"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "block-heater",
+          "name": "Engine block heater",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "block-heater"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "interior-appearance",
+          "name": "Interior Appearance Group by Mopar",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [],
+          "confidence": "uncertain",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "performance-handling-group",
+          "name": "Performance Handling Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "brembo-brakes",
+            "performance-suspension",
+            "performance-steering",
+            "limited-slip",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "RWD GT only.",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "awd",
+          "name": "All-wheel drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 2605,
+            "gt": 3000
+          },
+          "features": [
+            "awd",
+            "wheels-19"
+          ],
+          "confidence": "verified",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "notes": "Final model year (Last Call). Both SXT and GT offered in RWD or AWD. Sources disagree on base prices by $1,420: Autotrader says SXT $30,545 and GT $33,845, BuildPriceOption says $31,965 and $35,265 (Dodge raised prices during the year, which may explain it). Lower figures used here.",
+      "sources": [
+        {
+          "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+          "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+        },
+        {
+          "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+          "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+        }
+      ],
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "keyless-go",
+            "dual-zone-climate",
+            "houndstooth-cloth",
+            "wheels-18",
+            "tft-cluster-7",
+            "rear-spoiler",
+            "uconnect-7",
+            "carplay-android",
+            "alpine-6"
+          ],
+          "confidence": "likely",
+          "baseMsrpUsd": 30545,
+          "notes": "AWD adds 19-inch wheels and a 3.07 axle (+$3,000)."
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "standardFeatures": [
+            "v6-pentastar",
+            "auto-8-speed",
+            "backup-camera",
+            "parksense-rear",
+            "keyless-go",
+            "remote-start",
+            "dual-zone-climate",
+            "fog-lamps",
+            "hood-scoop",
+            "front-splitter",
+            "wheels-20",
+            "houndstooth-cloth",
+            "uconnect-84",
+            "carplay-android",
+            "tft-cluster-7",
+            "super-track-pak",
+            "performance-pages",
+            "launch-control",
+            "performance-suspension",
+            "performance-brakes",
+            "performance-steering",
+            "axle-307",
+            "performance-steering-wheel",
+            "garage-door-opener"
+          ],
+          "confidence": "likely",
+          "baseMsrpUsd": 33845,
+          "notes": "GT AWD +$3,000; it lacks the RWD car's performance suspension and steering."
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus",
+          "name": "Plus Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "uconnect-84",
+            "alpine-6",
+            "nappa-leather",
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "parksense-rear",
+            "garage-door-opener",
+            "seat-memory"
+          ],
+          "confidence": "likely",
+          "notes": "SXT: Nappa sport seats, heated seats and wheel, seat memory, Uconnect 4C with 8.4-inch screen and SiriusXM, premium audio, 20-inch wheels, rear park sensors, performance brakes.",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "adaptive-cruise",
+            "forward-collision-warning",
+            "auto-high-beams",
+            "rain-sensing-wipers"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "driver-convenience-group",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "blind-spot",
+            "rear-cross-path",
+            "hid-headlamps",
+            "power-folding-mirrors"
+          ],
+          "confidence": "likely",
+          "notes": "On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT).",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "cold-weather-group",
+          "name": "Cold Weather Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "heated-seats",
+            "heated-steering-wheel"
+          ],
+          "confidence": "likely",
+          "notes": "Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator.",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "black-exterior",
+            "rear-spoiler",
+            "fog-lamps",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "alpine-audio",
+          "name": "Alpine Audio Group with Subwoofer",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "alpine-9-sub"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "harman-kardon",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "harman-kardon"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "navigation",
+          "name": "Uconnect 4C NAV with 8.4-inch display",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "navigation",
+            "uconnect-84"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "sunroof",
+          "name": "Power sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "siriusxm",
+          "name": "SiriusXM satellite radio",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "siriusxm"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "compact-spare",
+          "name": "Compact spare tire",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "compact-spare"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "block-heater",
+          "name": "Engine block heater",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "block-heater"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "interior-appearance",
+          "name": "Interior Appearance Group by Mopar",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [],
+          "confidence": "uncertain",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "performance-handling-group",
+          "name": "Performance Handling Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "brembo-brakes",
+            "performance-suspension",
+            "performance-steering",
+            "limited-slip",
+            "wheels-20"
+          ],
+          "confidence": "likely",
+          "notes": "RWD GT only.",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "awd",
+          "name": "All-wheel drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "features": [
+            "awd",
+            "wheels-19"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus-group",
+          "name": "GT Plus Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "ventilated-seats",
+            "nappa-alcantara"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            }
+          ]
+        },
+        {
+          "id": "ambient-lighting",
+          "name": "Ambient interior lighting",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "ambient-lighting"
+          ],
+          "confidence": "likely",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
