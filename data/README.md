@@ -20,6 +20,14 @@ Every trim and package has a `confidence` flag:
 
 Prices are US MSRP in USD excluding destination unless the notes say otherwise. A missing `priceUsd` means the price was not found.
 
+## Package items the trim already has
+
+A package lists the same contents on every trim it is offered on, so some items can already be standard on one trim:
+
+- **Style or spec swaps** get their own feature with a `replaces` field (for example `rear-spoiler-black` replaces `rear-spoiler`, `wheels-20x9` replaces `wheels-20`). The app shows these as "replaces standard ...".
+- **Plus Package** is split per trim (`plus` for SXT, `gt-plus` for GT) because the two versions have different contents.
+- **Shared listings** that stay: Blacktop's fog lamps and the navigation option's 8.4-inch screen are only new on the SXT. The GT already has them, so the app marks them "already standard" there.
+
 ## Known gaps
 
 - No primary option lists yet for 2015-2018, 2021-2023, or GT package prices after 2019.

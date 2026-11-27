@@ -9,15 +9,17 @@ interface Props {
   change?: "new" | "removed";
   /** Short extra context under or next to the name, e.g. "was in Plus Package". */
   note?: string;
+  /** Greys the item out. Defaults to true when a tag is shown. */
+  muted?: boolean;
 }
 
 /** A feature name with an info button that reveals a plain-language hint. */
-export function FeatureItem({ feature, tag, change, note }: Props) {
+export function FeatureItem({ feature, tag, change, note, muted }: Props) {
   const [open, setOpen] = useState(false);
   const hintId = useId();
 
   const classes = ["feature", `cat-${feature.category}`];
-  if (tag) classes.push("is-muted");
+  if (muted ?? Boolean(tag)) classes.push("is-muted");
   if (change) classes.push(`is-${change}`);
 
   return (

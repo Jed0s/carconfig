@@ -49,7 +49,8 @@ export function PackageCard({ pkg, trim, features, packageNames, change }: Props
             <FeatureItem
               key={id}
               feature={f}
-              tag={standard.has(id) ? "already standard" : undefined}
+              tag={featureTag(id, f.replaces, standard, features)}
+              muted={standard.has(id)}
               change={change?.addedFeatures.has(id) ? "new" : undefined}
             />
           );
@@ -62,4 +63,18 @@ export function PackageCard({ pkg, trim, features, packageNames, change }: Props
       {pkg.notes && <p className="note">{pkg.notes}</p>}
     </article>
   );
+}
+
+/** Tag for a package item relative to what the trim already has. */
+function featureTag(
+  id: string,
+  replaces: string | undefined,
+  standard: Set<string>,
+  features: Dataset["features"],
+): string | undefined {
+  if (standard.has(id)) return "already standard";
+  if (replaces && standard.has(replaces)) {
+    return `replaces standard ${(features[replaces]?.name ?? replaces).toLowerCase()}`;
+  }
+  return undefined;
 }
