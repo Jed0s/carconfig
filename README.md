@@ -7,17 +7,17 @@ Pick a model year and a trim to see what's standard and every factory package of
 ## Run it
 
 ```bash
-npm install
-npm run dev        # http://localhost:5173
+pnpm install
+pnpm dev           # http://localhost:5173
 ```
 
 | Script | What it does |
 | --- | --- |
-| `npm run dev` | Dev server with hot reload |
-| `npm run build` | Type check and production build into `dist/` |
-| `npm run lint` | ESLint |
-| `npm run typecheck` | TypeScript only |
-| `npm test` | Checks every dataset in `data/` for broken ids |
+| `pnpm dev` | Dev server with hot reload |
+| `pnpm build` | Type check and production build into `dist/` |
+| `pnpm lint` | ESLint |
+| `pnpm typecheck` | TypeScript only |
+| `pnpm test` | Checks every dataset in `data/` for broken ids |
 
 ## Data
 
