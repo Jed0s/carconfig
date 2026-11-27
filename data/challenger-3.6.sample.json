@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "model": {
+    "make": "Dodge",
+    "name": "Challenger",
+    "engine": "3.6L Pentastar V6",
+    "notes": "SAMPLE DATA for building the UI. Not verified. Real data will replace this file."
+  },
+  "features": {
+    "rear-camera": {
+      "name": "ParkView rear back-up camera",
+      "category": "safety",
+      "hint": "A camera above the rear plate that shows what is behind the car on the dashboard screen when you shift into reverse, with guide lines for parking."
+    },
+    "parksense-rear": {
+      "name": "ParkSense rear park assist",
+      "category": "safety",
+      "hint": "Ultrasonic sensors in the rear bumper that beep faster as you get closer to an obstacle while reversing."
+    },
+    "blind-spot": {
+      "name": "Blind Spot Monitoring with Rear Cross Path",
+      "category": "safety",
+      "hint": "Lights in the side mirrors warn you when a car is in your blind spot. Rear Cross Path warns about cars crossing behind you when you back out of a parking space."
+    },
+    "adaptive-cruise": {
+      "name": "Adaptive cruise control",
+      "category": "safety",
+      "hint": "Cruise control that uses radar to keep a set distance from the car ahead, slowing down and speeding up with traffic."
+    },
+    "forward-collision": {
+      "name": "Forward Collision Warning",
+      "category": "safety",
+      "hint": "Warns you, and can brake, if you are closing in on the car ahead too quickly."
+    },
+    "uconnect-7": {
+      "name": "Uconnect 4 with 7-inch display",
+      "category": "technology",
+      "hint": "The base touchscreen infotainment system: radio, Bluetooth, and Apple CarPlay / Android Auto."
+    },
+    "uconnect-8-4": {
+      "name": "Uconnect 4C with 8.4-inch display",
+      "category": "technology",
+      "hint": "A larger touchscreen with sharper graphics. Adds more app integration and is required for some navigation and performance pages."
+    },
+    "navigation": {
+      "name": "Built-in navigation",
+      "category": "technology",
+      "hint": "Maps stored in the car, so directions work without a phone signal. Less important if you use CarPlay or Android Auto."
+    },
+    "performance-pages": {
+      "name": "Performance Pages",
+      "category": "performance",
+      "hint": "Screens on the infotainment display that show gauges, 0-60 timers, g-forces and lap timing."
+    },
+    "heated-seats": {
+      "name": "Heated front seats",
+      "category": "comfort",
+      "hint": "Front seats with built-in heating elements, controlled from the screen or a button."
+    },
+    "heated-wheel": {
+      "name": "Heated steering wheel",
+      "category": "comfort",
+      "hint": "The steering wheel rim warms up so your hands stay warm in winter."
+    },
+    "ventilated-seats": {
+      "name": "Ventilated front seats",
+      "category": "comfort",
+      "hint": "Fans in the seats pull air through perforated upholstery to keep you cool in summer."
+    },
+    "remote-start": {
+      "name": "Remote start",
+      "category": "comfort",
+      "hint": "Start the engine from the key fob so the cabin can warm up or cool down before you get in."
+    },
+    "leather-seats": {
+      "name": "Nappa leather-faced seats",
+      "category": "comfort",
+      "hint": "Leather seat surfaces in place of the standard cloth."
+    },
+    "power-seats": {
+      "name": "8-way power driver seat",
+      "category": "comfort",
+      "hint": "The driver seat is adjusted with electric switches instead of manual levers."
+    },
+    "alpine-audio": {
+      "name": "Alpine premium audio (6 speakers + subwoofer)",
+      "category": "audio",
+      "hint": "An upgraded sound system from Alpine with a subwoofer for deeper bass."
+    },
+    "harman-kardon": {
+      "name": "Harman Kardon audio (18 speakers)",
+      "category": "audio",
+      "hint": "The top sound system: 18 speakers and a powerful amplifier for louder, clearer sound."
+    },
+    "black-wheels": {
+      "name": "20-inch gloss black wheels",
+      "category": "appearance",
+      "hint": "Larger black-painted wheels. Larger wheels look sportier but usually ride a bit firmer."
+    },
+    "black-badges": {
+      "name": "Black badges and grille",
+      "category": "appearance",
+      "hint": "The chrome badges and grille surround are replaced with black ones for a darker, blacked-out look."
+    },
+    "hid-headlamps": {
+      "name": "HID headlamps",
+      "category": "appearance",
+      "hint": "High-intensity discharge headlights. Brighter and whiter than standard halogen bulbs."
+    },
+    "sunroof": {
+      "name": "Power sunroof",
+      "category": "comfort",
+      "hint": "A glass roof panel that tilts or slides open with a switch."
+    },
+    "awd": {
+      "name": "All-wheel drive",
+      "category": "performance",
+      "hint": "Power goes to all four wheels instead of only the rear, for better grip in rain and snow. Can switch to rear-drive automatically to save fuel."
+    },
+    "sport-suspension": {
+      "name": "Sport-tuned suspension",
+      "category": "performance",
+      "hint": "Firmer springs and shocks that reduce body lean in corners, at the cost of a slightly stiffer ride."
+    },
+    "hood-scoop": {
+      "name": "Shaker-style or performance hood",
+      "category": "appearance",
+      "hint": "A hood with a scoop or vents for a more aggressive look."
+    }
+  },
+  "years": [
+    {
+      "year": 2022,
+      "notes": "Sample values for UI development.",
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "baseMsrpUsd": 30545,
+          "standardFeatures": [
+            "rear-camera",
+            "uconnect-7"
+          ],
+          "notes": "Rear-wheel drive. AWD available as an option."
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "baseMsrpUsd": 32545,
+          "standardFeatures": [
+            "rear-camera",
+            "uconnect-8-4",
+            "performance-pages",
+            "sport-suspension",
+            "hood-scoop"
+          ],
+          "notes": "Sportier styling and suspension. AWD available."
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus-group",
+          "name": "Plus Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": {
+            "sxt": 2995,
+            "gt": 2495
+          },
+          "features": [
+            "uconnect-8-4",
+            "heated-seats",
+            "heated-wheel",
+            "ventilated-seats",
+            "leather-seats",
+            "power-seats",
+            "alpine-audio",
+            "hid-headlamps",
+            "remote-start"
+          ]
+        },
+        {
+          "id": "driver-convenience",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1295,
+          "features": [
+            "blind-spot",
+            "parksense-rear",
+            "hid-headlamps"
+          ],
+          "requires": [
+            "plus-group"
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1495,
+          "features": [
+            "adaptive-cruise",
+            "forward-collision"
+          ],
+          "requires": [
+            "driver-convenience"
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1695,
+          "features": [
+            "black-wheels",
+            "black-badges"
+          ]
+        },
+        {
+          "id": "awd-package",
+          "name": "All-Wheel Drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 3000,
+          "features": [
+            "awd",
+            "heated-seats",
+            "heated-wheel"
+          ]
+        },
+        {
+          "id": "sunroof-option",
+          "name": "Power Sunroof",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1395,
+          "features": [
+            "sunroof"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "id": "harman-kardon-option",
+          "name": "Harman Kardon Audio Group",
+          "availableOn": [
+            "gt"
+          ],
+          "priceUsd": 1995,
+          "features": [
+            "harman-kardon"
+          ],
+          "requires": [
+            "plus-group"
+          ],
+          "confidence": "uncertain"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "notes": "Sample values for UI development. Last model year.",
+      "trims": [
+        {
+          "id": "sxt",
+          "name": "SXT",
+          "baseMsrpUsd": 32275,
+          "standardFeatures": [
+            "rear-camera",
+            "uconnect-8-4",
+            "parksense-rear"
+          ]
+        },
+        {
+          "id": "gt",
+          "name": "GT",
+          "baseMsrpUsd": 34275,
+          "standardFeatures": [
+            "rear-camera",
+            "uconnect-8-4",
+            "parksense-rear",
+            "performance-pages",
+            "sport-suspension",
+            "hood-scoop"
+          ]
+        }
+      ],
+      "packages": [
+        {
+          "id": "plus-group",
+          "name": "Plus Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 2995,
+          "features": [
+            "heated-seats",
+            "heated-wheel",
+            "ventilated-seats",
+            "leather-seats",
+            "power-seats",
+            "alpine-audio",
+            "hid-headlamps",
+            "remote-start"
+          ]
+        },
+        {
+          "id": "driver-convenience",
+          "name": "Driver Convenience Group",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 995,
+          "features": [
+            "blind-spot",
+            "hid-headlamps"
+          ]
+        },
+        {
+          "id": "technology-group",
+          "name": "Technology Group",
+          "availableOn": [
+            "gt"
+          ],
+          "priceUsd": 1495,
+          "features": [
+            "adaptive-cruise",
+            "forward-collision"
+          ],
+          "requires": [
+            "driver-convenience"
+          ]
+        },
+        {
+          "id": "blacktop",
+          "name": "Blacktop Package",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 1995,
+          "features": [
+            "black-wheels",
+            "black-badges"
+          ]
+        },
+        {
+          "id": "awd-package",
+          "name": "All-Wheel Drive",
+          "availableOn": [
+            "sxt",
+            "gt"
+          ],
+          "priceUsd": 3000,
+          "features": [
+            "awd",
+            "heated-seats",
+            "heated-wheel"
+          ]
+        }
+      ]
+    }
+  ]
+}
