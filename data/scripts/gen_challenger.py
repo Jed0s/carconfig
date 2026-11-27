@@ -2,8 +2,10 @@
 import json, sys, copy
 
 F = {}
-def feat(fid, name, cat, hint):
+def feat(fid, name, cat, hint, replaces=None):
     F[fid] = {"name": name, "category": cat, "hint": hint}
+    if replaces:
+        F[fid]["replaces"] = replaces
 
 # ---------- feature glossary ----------
 feat("v6-pentastar", "3.6L Pentastar V6", "performance", "The 6-cylinder engine in every SXT and GT: about 303-305 hp. Cheaper to run and insure than the V8 R/T, but noticeably slower.")
@@ -63,6 +65,10 @@ feat("performance-steering", "Performance steering", "performance", "Quicker, we
 feat("performance-steering-wheel", "Performance steering wheel with paddle shifters", "performance", "A thicker, sportier wheel (flat-bottom on some packages) with paddles to change gears manually.")
 feat("block-heater", "Engine block heater", "other", "Plugs into a wall outlet to keep the engine warm overnight in very cold climates so it starts easily.")
 feat("compact-spare", "Compact spare tire", "other", "A small temporary spare wheel. Without it the car only has a tire inflator kit, which cannot fix a torn tire.")
+feat("rear-spoiler-black", "Satin black rear spoiler", "appearance", "The same trunk spoiler the car already has, but painted satin black instead of body colour. A style change, not an extra part.", replaces="rear-spoiler")
+feat("wheels-20-black", "20-inch black-painted wheels", "appearance", "Large wheels in gloss or satin black. On the SXT they also upsize the wheels from 18 inches. On the GT they replace the standard 20-inch wheels with black ones (19-inch on AWD cars).", replaces="wheels-20")
+feat("wheels-20x9", "20 x 9-inch wider wheels", "performance", "Wider 20-inch wheels (9 inches across instead of 8) with wider tires for more grip in corners. Usually in a dark 'Lights Out' finish. Replaces the GT's standard 20-inch wheels.", replaces="wheels-20")
+feat("flat-bottom-steering-wheel", "Flat-bottom performance steering wheel", "performance", "A sport steering wheel with a flattened bottom edge for more leg room and a race-car feel. Replaces the standard round performance wheel.", replaces="performance-steering-wheel")
 feat("ambient-lighting", "Ambient interior lighting", "appearance", "Soft LED lighting around the cabin at night.")
 feat("surround-camera", "360-degree surround-view camera", "safety", "Stitches several cameras into a bird's-eye view of the car for parking. Note: never offered on the Challenger, which only has a rear camera. Listed here because it appears on many other cars.")
 
@@ -95,9 +101,10 @@ DCG = ["blind-spot", "rear-cross-path", "hid-headlamps", "power-folding-mirrors"
 DCG_SXT_EXTRA = ["fog-lamps", "parksense-rear", "remote-start", "garage-door-opener"]
 TECH = ["adaptive-cruise", "forward-collision-warning", "auto-high-beams", "rain-sensing-wipers"]
 COLD = ["heated-seats", "heated-steering-wheel"]
-PLUS_SXT = ["uconnect-84", "alpine-6", "nappa-leather", "heated-seats", "heated-steering-wheel", "power-tilt-telescope", "seat-memory", "siriusxm", "wifi-hotspot", "performance-pages", "parksense-rear", "garage-door-opener", "wheels-20", "performance-brakes"]
-PLUS_GT = ["nappa-alcantara", "heated-seats", "ventilated-seats", "heated-steering-wheel", "power-tilt-telescope", "seat-memory", "alpine-6", "siriusxm", "wifi-hotspot", "garage-door-opener"]
-BLACKTOP = ["black-exterior", "rear-spoiler", "fog-lamps"]
+PLUS_SXT_2019 = ["uconnect-84", "alpine-6", "nappa-leather", "heated-seats", "heated-steering-wheel", "power-tilt-telescope", "siriusxm", "wifi-hotspot", "performance-pages", "garage-door-opener"]
+PLUS_SXT_2020 = PLUS_SXT_2019 + ["parksense-rear", "wheels-20", "performance-brakes"]
+PLUS_GT = ["nappa-alcantara", "heated-seats", "ventilated-seats", "heated-steering-wheel", "power-tilt-telescope", "alpine-6", "siriusxm", "wifi-hotspot"]
+BLACKTOP = ["black-exterior", "rear-spoiler-black", "fog-lamps"]
 
 # ---------- trim standard features ----------
 SXT_BASE = ["v6-pentastar", "auto-8-speed", "backup-camera", "keyless-go", "dual-zone-climate", "houndstooth-cloth", "wheels-18", "tft-cluster-7", "rear-spoiler"]
@@ -128,7 +135,7 @@ for y in (2015, 2016):
         "packages": [
             pkg("sxt-plus", "SXT Plus (upgrade trim)", ["sxt"], ["nappa-leather", "heated-seats", "heated-steering-wheel", "uconnect-84", "alpine-6", "wheels-20", "power-tilt-telescope"], conf="uncertain", notes="Sold as a separate trim level, modelled here as an upgrade over the SXT. Exact contents varied by year."),
             pkg("super-track-pak", "Super Track Pak", ["sxt"], ["super-track-pak", "performance-suspension", "performance-steering", "axle-307", "wheels-20", "performance-pages"], conf="uncertain", notes="Sport-oriented option for V6 cars in the early facelift years."),
-            pkg("blacktop", "Blacktop Package", ["sxt"], BLACKTOP + ["wheels-20"], conf="uncertain"),
+            pkg("blacktop", "Blacktop Package", ["sxt"], BLACKTOP + ["wheels-20-black"], conf="uncertain"),
             pkg("driver-convenience-group", "Driver Convenience Group", ["sxt"], DCG + DCG_SXT_EXTRA, conf="uncertain"),
             pkg("technology-group", "Technology Group", ["sxt"], TECH, conf="uncertain", notes="Believed to require the SXT Plus."),
             pkg("navigation", "Navigation", ["sxt"], ["navigation", "uconnect-84"], conf="uncertain"),
@@ -150,11 +157,11 @@ for y in (2017, 2018):
         "packages": [
             pkg("sxt-plus", "SXT Plus (upgrade trim)", ["sxt"], ["nappa-leather", "heated-seats", "heated-steering-wheel", "uconnect-84", "alpine-6", "wheels-20", "power-tilt-telescope", "performance-pages"], conf="likely", notes="Separate trim level in 2017 (confirmed by Carvana's 2017 trim list), modelled as an upgrade over the SXT."),
             pkg("gt-interior", "GT Interior Package", ["gt"], ["nappa-alcantara", "alpine-9-sub", "performance-steering-wheel"], price=995 if y == 2017 else None, conf=v, sources=[S["fca2017gt"]]),
-            pkg("blacktop", "Blacktop Package", ["sxt", "gt"], BLACKTOP, conf="uncertain"),
+            pkg("blacktop", "Blacktop Package", ["sxt", "gt"], BLACKTOP + ["wheels-20-black"], conf="uncertain", notes="Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT."),
             pkg("driver-convenience-group", "Driver Convenience Group", ["sxt", "gt"], DCG, conf="uncertain", notes="On the SXT it also adds rear park sensors, remote start, fog lamps and a garage door opener."),
             pkg("technology-group", "Technology Group", ["sxt", "gt"], TECH, conf="uncertain"),
             pkg("harman-kardon", "Harman Kardon Audio Group", ["gt"], ["harman-kardon"], conf="uncertain"),
-            pkg("navigation", "Uconnect 4C NAV", ["sxt", "gt"], ["navigation", "uconnect-84"], conf="uncertain"),
+            pkg("navigation", "Uconnect 4C NAV", ["sxt", "gt"], ["navigation", "uconnect-84"], conf="uncertain", notes="The 8.4-inch screen is only new on the SXT; the GT already has it."),
             pkg("sunroof", "Power sunroof", ["sxt", "gt"], ["sunroof"], conf="uncertain"),
         ],
     })
@@ -163,19 +170,21 @@ for y in (2017, 2018):
 def packages_2019_like(prices, conf, src, harman_on_sxt=False):
     p = prices
     return [
-        pkg("plus", "Plus Package", ["sxt", "gt"], ["uconnect-84", "alpine-6", "nappa-leather", "nappa-alcantara", "heated-seats", "ventilated-seats", "heated-steering-wheel", "power-tilt-telescope", "siriusxm", "wifi-hotspot", "performance-pages", "parksense-rear", "garage-door-opener"], price=p.get("plus"), conf=conf, sources=src,
-            notes="Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years."),
+        pkg("plus", "Plus Package", ["sxt"], p.get("plus_sxt_features", PLUS_SXT_2019), price=p.get("plus", {}).get("sxt"), conf=conf, sources=src,
+            notes="Replaced the SXT Plus trim."),
+        pkg("gt-plus", "Plus Package (GT)", ["gt"], PLUS_GT, price=p.get("plus", {}).get("gt"), conf=conf, sources=src,
+            notes="The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages."),
         pkg("technology-group", "Technology Group", ["sxt", "gt"], TECH, price=p.get("tech"), conf=conf, sources=src),
         pkg("driver-convenience-group", "Driver Convenience Group", ["sxt", "gt"], DCG, price=p.get("dcg"), conf=conf, sources=src,
             notes="On the SXT it also adds fog lamps, rear park sensors, remote start and a garage door opener (already standard on the GT)."),
         pkg("cold-weather-group", "Cold Weather Group", ["sxt", "gt"], COLD, price=p.get("cold"), conf=conf, sources=src,
             notes="Not available together with the Plus Package, which already includes these. Adds a 180-amp alternator."),
-        pkg("blacktop", "Blacktop Package", ["sxt", "gt"], BLACKTOP + ["wheels-20"], price=p.get("blacktop"), conf=conf, sources=src,
-            notes="Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge."),
+        pkg("blacktop", "Blacktop Package", ["sxt", "gt"], BLACKTOP + ["wheels-20-black"], price=p.get("blacktop"), conf=conf, sources=src,
+            notes="Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge."),
         pkg("alpine-audio", "Alpine Audio Group with Subwoofer", ["sxt", "gt"], ["alpine-9-sub"], price=p.get("alpine"), conf=conf, sources=src),
         pkg("harman-kardon", "Harman Kardon Audio Group", ["gt"] + (["sxt"] if harman_on_sxt else []), ["harman-kardon"], price=p.get("hk"), conf=conf, sources=src),
         pkg("navigation", "Uconnect 4C NAV with 8.4-inch display", ["sxt", "gt"], ["navigation", "uconnect-84"], price=p.get("nav"), conf=conf, sources=src,
-            notes="$795 instead of $1,095 when ordered with the Plus Package (2019-2020)." if p.get("nav") else None),
+            notes=("$795 instead of $1,095 when ordered with the Plus Package (2019-2020). " if p.get("nav") else "") + "The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps."),
         pkg("sunroof", "Power sunroof", ["sxt", "gt"], ["sunroof"], price=p.get("sunroof"), conf=conf, sources=src),
         pkg("siriusxm", "SiriusXM satellite radio", ["sxt", "gt"], ["siriusxm"], price=p.get("sxm"), conf=conf, sources=src),
         pkg("interior-appearance", "Mopar Interior Appearance Package", ["sxt"], [], price=p.get("iap"), conf=conf, sources=src, notes="Cosmetic interior trim pieces from Mopar."),
@@ -199,10 +208,10 @@ years.append({
 
 # ---- 2020: verified SXT prices ----
 p2020 = packages_2019_like({
-    "plus": {"sxt": 3195}, "tech": {"sxt": 1295}, "dcg": {"sxt": 1095}, "cold": {"sxt": 495}, "blacktop": {"sxt": 1295},
+    "plus": {"sxt": 3195}, "plus_sxt_features": PLUS_SXT_2020, "tech": {"sxt": 1295}, "dcg": {"sxt": 1095}, "cold": {"sxt": 495}, "blacktop": {"sxt": 1295},
     "alpine": {"sxt": 995}, "nav": 1095, "sunroof": {"sxt": 1295}, "sxm": 195, "iap": 475, "spare": {"sxt": 495}, "heater": 95,
 }, "likely", [S["mi2020sxt"]])
-p2020.append(pkg("performance-handling-group", "Performance Handling Group", ["gt"], ["brembo-brakes", "bilstein-shocks", "wheels-20", "performance-steering-wheel", "limited-slip"], conf="likely", sources=[S["mi2020sxt"]], notes="RWD GT only. Price not found."))
+p2020.append(pkg("performance-handling-group", "Performance Handling Group", ["gt"], ["brembo-brakes", "bilstein-shocks", "limited-slip", "wheels-20x9", "flat-bottom-steering-wheel"], conf="likely", sources=[S["mi2020sxt"]], notes="RWD GT only. Price not found."))
 p2020.append(pkg("awd", "All-wheel drive", ["sxt", "gt"], ["awd", "wheels-19"], conf="likely", notes="AWD becomes available on the SXT around this time (some sources say 2019). Price not verified for 2020."))
 years.append({
     "year": 2020,
@@ -217,10 +226,10 @@ years.append({
 
 # ---- 2021-2023 ----
 def late_packages(conf, src, awd_price=None, year=None):
-    ps = packages_2019_like({}, conf, src)
+    ps = packages_2019_like({"plus_sxt_features": PLUS_SXT_2020}, conf, src)
     ps = [p for p in ps if p["id"] not in ("interior-appearance",)]
     ps.append(pkg("interior-appearance", "Interior Appearance Group by Mopar", ["sxt", "gt"], [], conf="uncertain", sources=src))
-    ps.append(pkg("performance-handling-group", "Performance Handling Group", ["gt"], ["brembo-brakes", "performance-suspension", "performance-steering", "limited-slip", "wheels-20"], conf=conf, sources=src, notes="RWD GT only."))
+    ps.append(pkg("performance-handling-group", "Performance Handling Group", ["gt"], ["brembo-brakes", "bilstein-shocks", "limited-slip", "wheels-20x9", "flat-bottom-steering-wheel"], conf=conf, sources=src, notes="RWD GT only. Sharpens the GT's already-sporty suspension with Bilstein shocks, adds big Brembo brakes, a limited-slip differential and wider wheels."))
     ps.append(pkg("awd", "All-wheel drive", ["sxt", "gt"], ["awd", "wheels-19"], price=awd_price, conf="verified" if awd_price else conf, sources=src))
     return ps
 
@@ -244,9 +253,11 @@ years.append({
 p2023 = late_packages("likely", [S["at2023"], S["bpo2023"]])
 for p in p2023:
     if p["id"] == "plus":
-        p["features"] = p["features"] + ["seat-memory"]
-        p["notes"] = "SXT: Nappa sport seats, heated seats and wheel, seat memory, Uconnect 4C with 8.4-inch screen and SiriusXM, premium audio, 20-inch wheels, rear park sensors, performance brakes."
-p2023.append(pkg("gt-plus-group", "GT Plus Group", ["gt"], ["ventilated-seats", "nappa-alcantara"], conf="likely", sources=[S["at2023"]]))
+        p["features"] = [f for f in p["features"] if f != "alpine-6"] + ["seat-memory"]
+        p["notes"] = "Replaced the SXT Plus trim. By 2023 the 6-speaker Alpine audio is standard on the SXT, so the Plus Package no longer adds it."
+    if p["id"] == "gt-plus":
+        p["name"] = "GT Plus Group"
+        p["features"] = [f for f in p["features"] if f != "alpine-6"]
 p2023.append(pkg("ambient-lighting", "Ambient interior lighting", ["gt"], ["ambient-lighting"], conf="likely", sources=[S["at2023"]]))
 years.append({
     "year": 2023,

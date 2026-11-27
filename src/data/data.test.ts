@@ -14,3 +14,15 @@ describe("datasets in /data", () => {
     });
   }
 });
+
+describe("validateDataset", () => {
+  it("flags a feature that replaces an unknown feature", () => {
+    const data: Dataset = {
+      schemaVersion: 1,
+      model: { make: "X", name: "Y", engine: "Z" },
+      features: { a: { name: "A", category: "other", hint: "", replaces: "missing" } },
+      years: [],
+    };
+    expect(validateDataset(data)).toEqual(['feature "a": replaces unknown feature "missing"']);
+  });
+});

@@ -43,6 +43,13 @@ export interface Feature {
   category: FeatureCategory;
   /** Plain-language explanation shown as the hover/tap hint. */
   hint: string;
+  /**
+   * Id of a standard feature this one is a style or spec variant of, e.g.
+   * "rear-spoiler-black" replaces "rear-spoiler". When a package lists it on a
+   * trim that has the original, the UI says "replaces standard ..." instead of
+   * "already standard".
+   */
+  replaces?: Id;
 }
 
 export interface ModelYear {

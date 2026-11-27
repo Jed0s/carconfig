@@ -8,6 +8,12 @@ export function validateDataset(data: Dataset): string[] {
   const problems: string[] = [];
   const featureIds = new Set(Object.keys(data.features));
 
+  for (const [id, f] of Object.entries(data.features)) {
+    if (f.replaces && !featureIds.has(f.replaces)) {
+      problems.push(`feature "${id}": replaces unknown feature "${f.replaces}"`);
+    }
+  }
+
   for (const y of data.years) {
     const trimIds = new Set(y.trims.map((t) => t.id));
     const packageIds = new Set(y.packages.map((p) => p.id));

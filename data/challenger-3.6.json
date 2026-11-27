@@ -292,6 +292,30 @@
       "category": "other",
       "hint": "A small temporary spare wheel. Without it the car only has a tire inflator kit, which cannot fix a torn tire."
     },
+    "rear-spoiler-black": {
+      "name": "Satin black rear spoiler",
+      "category": "appearance",
+      "hint": "The same trunk spoiler the car already has, but painted satin black instead of body colour. A style change, not an extra part.",
+      "replaces": "rear-spoiler"
+    },
+    "wheels-20-black": {
+      "name": "20-inch black-painted wheels",
+      "category": "appearance",
+      "hint": "Large wheels in gloss or satin black. On the SXT they also upsize the wheels from 18 inches. On the GT they replace the standard 20-inch wheels with black ones (19-inch on AWD cars).",
+      "replaces": "wheels-20"
+    },
+    "wheels-20x9": {
+      "name": "20 x 9-inch wider wheels",
+      "category": "performance",
+      "hint": "Wider 20-inch wheels (9 inches across instead of 8) with wider tires for more grip in corners. Usually in a dark 'Lights Out' finish. Replaces the GT's standard 20-inch wheels.",
+      "replaces": "wheels-20"
+    },
+    "flat-bottom-steering-wheel": {
+      "name": "Flat-bottom performance steering wheel",
+      "category": "performance",
+      "hint": "A sport steering wheel with a flattened bottom edge for more leg room and a race-car feel. Replaces the standard round performance wheel.",
+      "replaces": "performance-steering-wheel"
+    },
     "ambient-lighting": {
       "name": "Ambient interior lighting",
       "category": "appearance",
@@ -376,9 +400,9 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "uncertain"
         },
@@ -512,9 +536,9 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "uncertain"
         },
@@ -690,10 +714,12 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
-            "fog-lamps"
+            "rear-spoiler-black",
+            "fog-lamps",
+            "wheels-20-black"
           ],
-          "confidence": "uncertain"
+          "confidence": "uncertain",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT."
         },
         {
           "id": "driver-convenience-group",
@@ -748,7 +774,8 @@
             "navigation",
             "uconnect-84"
           ],
-          "confidence": "uncertain"
+          "confidence": "uncertain",
+          "notes": "The 8.4-inch screen is only new on the SXT; the GT already has it."
         },
         {
           "id": "sunroof",
@@ -876,10 +903,12 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
-            "fog-lamps"
+            "rear-spoiler-black",
+            "fog-lamps",
+            "wheels-20-black"
           ],
-          "confidence": "uncertain"
+          "confidence": "uncertain",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT."
         },
         {
           "id": "driver-convenience-group",
@@ -934,7 +963,8 @@
             "navigation",
             "uconnect-84"
           ],
-          "confidence": "uncertain"
+          "confidence": "uncertain",
+          "notes": "The 8.4-inch screen is only new on the SXT; the GT already has it."
         },
         {
           "id": "sunroof",
@@ -1021,30 +1051,53 @@
           "id": "plus",
           "name": "Plus Package",
           "availableOn": [
-            "sxt",
-            "gt"
+            "sxt"
           ],
-          "priceUsd": {
-            "sxt": 3000,
-            "gt": 2495
-          },
+          "priceUsd": 3000,
           "features": [
             "uconnect-84",
             "alpine-6",
             "nappa-leather",
-            "nappa-alcantara",
             "heated-seats",
-            "ventilated-seats",
             "heated-steering-wheel",
             "power-tilt-telescope",
             "siriusxm",
             "wifi-hotspot",
             "performance-pages",
-            "parksense-rear",
             "garage-door-opener"
           ],
           "confidence": "verified",
-          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "notes": "Replaced the SXT Plus trim.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-sxt-pricing-options-list/"
+            },
+            {
+              "title": "MoparInsiders: 2019 Dodge Challenger GT AWD Pricing & Options List",
+              "url": "https://moparinsiders.com/2019-dodge-challenger-gt-awd-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus",
+          "name": "Plus Package (GT)",
+          "availableOn": [
+            "gt"
+          ],
+          "priceUsd": 2495,
+          "features": [
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "alpine-6",
+            "siriusxm",
+            "wifi-hotspot"
+          ],
+          "confidence": "verified",
+          "notes": "The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages.",
           "sources": [
             {
               "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
@@ -1147,12 +1200,12 @@
           "priceUsd": 695,
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "verified",
-          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge.",
           "sources": [
             {
               "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
@@ -1222,7 +1275,7 @@
             "uconnect-84"
           ],
           "confidence": "verified",
-          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020).",
+          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020). The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps.",
           "sources": [
             {
               "title": "MoparInsiders: 2019 Dodge Challenger SXT Pricing & Options List",
@@ -1419,29 +1472,51 @@
           "id": "plus",
           "name": "Plus Package",
           "availableOn": [
-            "sxt",
-            "gt"
+            "sxt"
           ],
-          "priceUsd": {
-            "sxt": 3195
-          },
+          "priceUsd": 3195,
           "features": [
             "uconnect-84",
             "alpine-6",
             "nappa-leather",
-            "nappa-alcantara",
             "heated-seats",
-            "ventilated-seats",
             "heated-steering-wheel",
             "power-tilt-telescope",
             "siriusxm",
             "wifi-hotspot",
             "performance-pages",
+            "garage-door-opener",
             "parksense-rear",
-            "garage-door-opener"
+            "wheels-20",
+            "performance-brakes"
           ],
           "confidence": "likely",
-          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "notes": "Replaced the SXT Plus trim.",
+          "sources": [
+            {
+              "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
+              "url": "https://moparinsiders.com/2020-dodge-challenger-sxt-pricing-options-list/"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus",
+          "name": "Plus Package (GT)",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "alpine-6",
+            "siriusxm",
+            "wifi-hotspot"
+          ],
+          "confidence": "likely",
+          "notes": "The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages.",
           "sources": [
             {
               "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
@@ -1533,12 +1608,12 @@
           },
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "likely",
-          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge.",
           "sources": [
             {
               "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
@@ -1597,7 +1672,7 @@
             "uconnect-84"
           ],
           "confidence": "likely",
-          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020).",
+          "notes": "$795 instead of $1,095 when ordered with the Plus Package (2019-2020). The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps.",
           "sources": [
             {
               "title": "MoparInsiders: 2020 Dodge Challenger SXT Pricing & Options List",
@@ -1711,9 +1786,9 @@
           "features": [
             "brembo-brakes",
             "bilstein-shocks",
-            "wheels-20",
-            "performance-steering-wheel",
-            "limited-slip"
+            "limited-slip",
+            "wheels-20x9",
+            "flat-bottom-steering-wheel"
           ],
           "confidence": "likely",
           "notes": "RWD GT only. Price not found.",
@@ -1808,26 +1883,49 @@
           "id": "plus",
           "name": "Plus Package",
           "availableOn": [
-            "sxt",
-            "gt"
+            "sxt"
           ],
           "features": [
             "uconnect-84",
             "alpine-6",
             "nappa-leather",
-            "nappa-alcantara",
             "heated-seats",
-            "ventilated-seats",
             "heated-steering-wheel",
             "power-tilt-telescope",
             "siriusxm",
             "wifi-hotspot",
             "performance-pages",
+            "garage-door-opener",
             "parksense-rear",
-            "garage-door-opener"
+            "wheels-20",
+            "performance-brakes"
           ],
           "confidence": "likely",
-          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "notes": "Replaced the SXT Plus trim.",
+          "sources": [
+            {
+              "title": "General knowledge, not checked against a primary source"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus",
+          "name": "Plus Package (GT)",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "alpine-6",
+            "siriusxm",
+            "wifi-hotspot"
+          ],
+          "confidence": "likely",
+          "notes": "The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages.",
           "sources": [
             {
               "title": "General knowledge, not checked against a primary source"
@@ -1903,12 +2001,12 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "likely",
-          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge.",
           "sources": [
             {
               "title": "General knowledge, not checked against a primary source"
@@ -1960,6 +2058,7 @@
             "uconnect-84"
           ],
           "confidence": "likely",
+          "notes": "The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps.",
           "sources": [
             {
               "title": "General knowledge, not checked against a primary source"
@@ -2057,13 +2156,13 @@
           ],
           "features": [
             "brembo-brakes",
-            "performance-suspension",
-            "performance-steering",
+            "bilstein-shocks",
             "limited-slip",
-            "wheels-20"
+            "wheels-20x9",
+            "flat-bottom-steering-wheel"
           ],
           "confidence": "likely",
-          "notes": "RWD GT only.",
+          "notes": "RWD GT only. Sharpens the GT's already-sporty suspension with Bilstein shocks, adds big Brembo brakes, a limited-slip differential and wider wheels.",
           "sources": [
             {
               "title": "General knowledge, not checked against a primary source"
@@ -2159,26 +2258,50 @@
           "id": "plus",
           "name": "Plus Package",
           "availableOn": [
-            "sxt",
-            "gt"
+            "sxt"
           ],
           "features": [
             "uconnect-84",
             "alpine-6",
             "nappa-leather",
-            "nappa-alcantara",
             "heated-seats",
-            "ventilated-seats",
             "heated-steering-wheel",
             "power-tilt-telescope",
             "siriusxm",
             "wifi-hotspot",
             "performance-pages",
+            "garage-door-opener",
             "parksense-rear",
-            "garage-door-opener"
+            "wheels-20",
+            "performance-brakes"
           ],
           "confidence": "likely",
-          "notes": "Replaced the SXT Plus trim. SXT gets Nappa leather sport seats; GT gets Nappa/Alcantara performance seats with ventilation. The SXT version also brings 20-inch wheels and performance brakes in some years.",
+          "notes": "Replaced the SXT Plus trim.",
+          "sources": [
+            {
+              "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
+              "url": "https://www.cars.com/articles/dodge-challenger-which-should-you-buy-2021-or-2022-445858"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus",
+          "name": "Plus Package (GT)",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
+            "nappa-alcantara",
+            "heated-seats",
+            "ventilated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "alpine-6",
+            "siriusxm",
+            "wifi-hotspot"
+          ],
+          "confidence": "likely",
+          "notes": "The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages.",
           "sources": [
             {
               "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
@@ -2258,12 +2381,12 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "likely",
-          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge.",
           "sources": [
             {
               "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
@@ -2318,6 +2441,7 @@
             "uconnect-84"
           ],
           "confidence": "likely",
+          "notes": "The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps.",
           "sources": [
             {
               "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
@@ -2421,13 +2545,13 @@
           ],
           "features": [
             "brembo-brakes",
-            "performance-suspension",
-            "performance-steering",
+            "bilstein-shocks",
             "limited-slip",
-            "wheels-20"
+            "wheels-20x9",
+            "flat-bottom-steering-wheel"
           ],
           "confidence": "likely",
-          "notes": "RWD GT only.",
+          "notes": "RWD GT only. Sharpens the GT's already-sporty suspension with Bilstein shocks, adds big Brembo brakes, a limited-slip differential and wider wheels.",
           "sources": [
             {
               "title": "Cars.com: Dodge Challenger, 2021 or 2022? (Jan 14, 2022)",
@@ -2534,27 +2658,53 @@
           "id": "plus",
           "name": "Plus Package",
           "availableOn": [
-            "sxt",
-            "gt"
+            "sxt"
           ],
           "features": [
             "uconnect-84",
-            "alpine-6",
             "nappa-leather",
+            "heated-seats",
+            "heated-steering-wheel",
+            "power-tilt-telescope",
+            "siriusxm",
+            "wifi-hotspot",
+            "performance-pages",
+            "garage-door-opener",
+            "parksense-rear",
+            "wheels-20",
+            "performance-brakes",
+            "seat-memory"
+          ],
+          "confidence": "likely",
+          "notes": "Replaced the SXT Plus trim. By 2023 the 6-speaker Alpine audio is standard on the SXT, so the Plus Package no longer adds it.",
+          "sources": [
+            {
+              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
+              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
+            },
+            {
+              "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
+              "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
+            }
+          ]
+        },
+        {
+          "id": "gt-plus",
+          "name": "GT Plus Group",
+          "availableOn": [
+            "gt"
+          ],
+          "features": [
             "nappa-alcantara",
             "heated-seats",
             "ventilated-seats",
             "heated-steering-wheel",
             "power-tilt-telescope",
             "siriusxm",
-            "wifi-hotspot",
-            "performance-pages",
-            "parksense-rear",
-            "garage-door-opener",
-            "seat-memory"
+            "wifi-hotspot"
           ],
           "confidence": "likely",
-          "notes": "SXT: Nappa sport seats, heated seats and wheel, seat memory, Uconnect 4C with 8.4-inch screen and SiriusXM, premium audio, 20-inch wheels, rear park sensors, performance brakes.",
+          "notes": "The GT's own version of the Plus Package, focused on leather/Alcantara seats and comfort, since the GT already has the big screen and Performance Pages.",
           "sources": [
             {
               "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
@@ -2650,12 +2800,12 @@
           ],
           "features": [
             "black-exterior",
-            "rear-spoiler",
+            "rear-spoiler-black",
             "fog-lamps",
-            "wheels-20"
+            "wheels-20-black"
           ],
           "confidence": "likely",
-          "notes": "Black-painted wheels (20-inch on SXT, 19-inch on GT AWD in 2019). Optional black stripe at no charge.",
+          "notes": "Fog lamps are only new on the SXT; the GT already has them. Black wheels are 19-inch on the AWD GT. Optional black stripe at no charge.",
           "sources": [
             {
               "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
@@ -2722,6 +2872,7 @@
             "uconnect-84"
           ],
           "confidence": "likely",
+          "notes": "The bigger 8.4-inch screen is only new on the SXT; the GT already has it, so on a GT this adds just the maps.",
           "sources": [
             {
               "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
@@ -2849,13 +3000,13 @@
           ],
           "features": [
             "brembo-brakes",
-            "performance-suspension",
-            "performance-steering",
+            "bilstein-shocks",
             "limited-slip",
-            "wheels-20"
+            "wheels-20x9",
+            "flat-bottom-steering-wheel"
           ],
           "confidence": "likely",
-          "notes": "RWD GT only.",
+          "notes": "RWD GT only. Sharpens the GT's already-sporty suspension with Bilstein shocks, adds big Brembo brakes, a limited-slip differential and wider wheels.",
           "sources": [
             {
               "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
@@ -2887,24 +3038,6 @@
             {
               "title": "BuildPriceOption: 2023 Dodge Challenger trim levels",
               "url": "https://www.buildpriceoption.com/2023-dodge-challenger-trim-levels-and-standard-features/"
-            }
-          ]
-        },
-        {
-          "id": "gt-plus-group",
-          "name": "GT Plus Group",
-          "availableOn": [
-            "gt"
-          ],
-          "features": [
-            "ventilated-seats",
-            "nappa-alcantara"
-          ],
-          "confidence": "likely",
-          "sources": [
-            {
-              "title": "Autotrader: 2023 Dodge Challenger, choosing the right trim",
-              "url": "https://www.autotrader.com/car-reviews/2023-dodge-challenger-choosing-the-right-trim"
             }
           ]
         },
