@@ -19,6 +19,11 @@ pnpm dev           # http://localhost:5173
 | `pnpm typecheck` | TypeScript only |
 | `pnpm test` | Checks every dataset in `data/` for broken ids |
 
+## Live site
+
+Every push to `main` is built and deployed to GitHub Pages: https://jed0s.github.io/carconfig/
+(see `.github/workflows/pages.yml`). Pull requests run lint, tests and build without deploying.
+
 ## Data
 
 All car data lives in `data/` as one JSON file per model and engine, for example `data/challenger-3.6.json`. The shape is defined in [`src/data/schema.ts`](src/data/schema.ts):
